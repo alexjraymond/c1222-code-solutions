@@ -1,0 +1,24 @@
+.button {
+  height: 80px;
+  width: 200px;
+  font-size: 25px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+tbody tr:nth-child(even) {
+  background-color: white;
+}
