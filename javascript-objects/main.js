@@ -13,6 +13,17 @@ student.previousOccupation = 'music producer';
 console.log('lives in irvine?', student.livesInIrvine);
 console.log('previous occupation', student.previousOccupation);
 
+var vehicle = {
+  make: 'Mazda',
+  model: 'CX5',
+  year: 2017
+};
+
+vehicle['color'] = 'space grey';
+vehicle['isConvertible'] = false;
+
+console.log('i love my car', vehicle);
+
 var pet = {
   name: 'Gale',
   type: 'Clownfish'
