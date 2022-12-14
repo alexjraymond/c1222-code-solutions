@@ -35,6 +35,10 @@ body {
   flex-basis: calc(100% / 4);
 }
 
+.col-fifth {
+  flex-basis: calc(100% / 5);
+}
+
 img {
   width: 100%;
   height: auto;
