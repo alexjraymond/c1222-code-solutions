@@ -1,49 +1,41 @@
-/* GOATED CSS CHEATSHEET - follow this for *, container, row, column, body */
-
 * {
   box-sizing: border-box;
 }
 
-/* font family on body or html is gud too */
 body {
   margin: 0;
 }
 
-/* draw diagrams and note rows and columns needed */
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* don't ever do row-1, row-2, row-3, etc
-want to add padding? make just a padding utility class
-let classes be apparent what they do */
 .row {
   display: flex;
 }
 
-/* multiple columns is fine, for like .column-third, .column-full, column-half, etc */
-.column-fourth {
+.col-full {
+  flex-basis: 100%;
+}
+
+.col-half {
+  flex-basis: calc(100% / 2);
+}
+
+.col-third {
+  flex-basis: calc(100% / 3);
+}
+
+.col-two-third {
+  flex-basis: calc (200% / 3);
+}
+
+.col-fourth {
   flex-basis: calc(100% / 4);
 }
 
-/* elements in html can have multiple classes.
-want to add flex wrap to a row? make a new utility class, and a new ruleset
-*/
-.wrap {
-  flex: wrap;
-}
-
-.p-15 {
-  padding: 20px;
-}
-
-/* semantic classes are important. "about-section", etc, etc.
-you add what you need to it and add said class.  Do semantic classes
-if you need to submit something just once.
-in html it could look like: <div class="row wrap about-section"> */
-
-.about-section {
-  background-color: aquamarine;
-  font-weight: 500px;
+img {
+  width: 100%;
+  height: auto;
 }
