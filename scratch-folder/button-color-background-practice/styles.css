@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  flex-basis: 100%;
+}
+
+.col-half {
+  flex-basis: calc(100% / 2);
+}
+
+.col-third {
+  flex-basis: calc(100% / 3);
+}
+
+.col-two-third {
+  flex-basis: calc (200% / 3);
+}
+
+.col-fourth {
+  flex-basis: calc(100% / 4);
+}
+
+.col-fifth {
+  flex-basis: calc(100% / 5);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
