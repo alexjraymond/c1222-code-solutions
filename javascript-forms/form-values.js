@@ -12,7 +12,7 @@ function submitFunc(event) {
   };
   console.log('form object', formObj);
   $contactForm.reset();
-
+// git pls work
 }
 
 $contactForm.addEventListener('submit', submitFunc);
