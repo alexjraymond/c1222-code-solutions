@@ -14,7 +14,7 @@
 function tail(array) {
   var newArr = [];
   for (var i = 1; i < array.length; i++) {
-    newArr[i - 1] = array[i];
+    newArr.push(array[i]);
   }
   return newArr;
 }

@@ -13,7 +13,7 @@
 function reverse(array) {
   var revArr = [];
   for (var i = 0; i < array.length; i++) {
-    revArr[i] = array[array.length - i - 1];
+    revArr.push(array[array.length - i - 1]);
   }
   return revArr;
 }
