@@ -12,3 +12,17 @@
 
 //   return lasts;
 // }
+
+function lastChars(length, string) {
+  var desiredLength = string.length - length;
+  var lastCharsString = '';
+  if (length > string.length) {
+    return string;
+  } else {
+    for (var i = desiredLength; i < string.length; i++) {
+      lastCharsString += string[i];
+    }
+
+    return lastCharsString;
+  }
+}
