@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.lightbulb {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.on {
+  background: #f9ea84;
+  box-shadow: 0 0 10rem 2rem #c1b465;
+}
+
+.off {
+  background: #252525;
+  box-shadow: 0 0 10rem 2rem #111;
+}
+
+.background-on {
+  background-color: #fef9f1;
+}
+
+.background-off {
+  background-color: #111;
+}
+
+.container {
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
