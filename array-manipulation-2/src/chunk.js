@@ -6,6 +6,11 @@
 // return that new array
 
 function chunk(array, size) {
-  var newArr = [array.slice(size)];
-  return newArr;
+  var chunked = [];
+  for (var i = 0; i < array.length; i += size) {
+    var slice = array.slice(i, i + size);
+    chunked.push(slice);
+  }
+
+  return chunked;
 }
