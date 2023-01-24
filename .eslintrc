@@ -21,20 +21,11 @@
   "rules": {
     "arrow-parens": [
       "error",
-      "as-needed"
+      "always"
     ],
     "curly": [
       "error",
       "multi-line"
-    ],
-    "no-console": [
-      "error",
-      {
-        "allow": [
-          "warn",
-          "error"
-        ]
-      }
     ],
     "no-restricted-globals": [
       "error",
@@ -83,7 +74,9 @@
         "react/jsx-indent": [
           "error",
           2,
-          { "checkAttributes": true }
+          {
+            "checkAttributes": true
+          }
         ],
         "react/self-closing-comp": [
           "error",
