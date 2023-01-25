@@ -1,5 +1,1 @@
-const subtract = (a, b) => {
-  return (a - b);
-};
-
-module.exports = { subtract };
+module.exports = (a, b) => a - b;

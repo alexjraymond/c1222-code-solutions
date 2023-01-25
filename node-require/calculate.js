@@ -3,22 +3,21 @@ const subtract = require('./subtract');
 const multiply = require('./multiply');
 const divide = require('./divide');
 
-const argvs = process.argv;
+const commandLineInput = process.argv;
 
-const argv = argvs.slice();
-
-const operator = argv[3];
-const firstNumber = parseInt(argv[2]);
-const secondNumber = parseInt(argv[4]);
+const operator = commandLineInput[3];
+const firstNumber = parseInt(commandLineInput[2]);
+const secondNumber = parseInt(commandLineInput[4]);
+let result = 0;
 
 if (operator === 'plus') {
-
-  console.log(add.add(firstNumber, secondNumber));
+  result = add(firstNumber, secondNumber);
 } else if (operator === 'minus') {
-
-  console.log(subtract.subtract(firstNumber, secondNumber));
+  result = subtract(firstNumber, secondNumber);
 } else if (operator === 'over') {
-  console.log(divide.divide(firstNumber, secondNumber));
+  result = divide(firstNumber, secondNumber);
 } else if (operator === 'time') {
-  console.log(multiply.multiply(firstNumber, secondNumber));
+  result = multiply(firstNumber, secondNumber);
 }
+
+console.log(result);
