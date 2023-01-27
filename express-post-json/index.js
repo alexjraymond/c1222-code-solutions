@@ -16,11 +16,11 @@ app.get('/api/grades', (req, res) => {
 );
 
 app.post('/api/grades', (req, res) => {
-  req.body.studentId = nextId;
-  grades[nextId] = req.body;
+  const newGrade = req.body;
+  newGrade.studentId = nextId;
+  grades[nextId] = newGrade;
   nextId++;
-  res.sendStatus(201);
-  return grades;
+  res.status(201).json(newGrade);
 });
 
 app.listen(port, () => {
