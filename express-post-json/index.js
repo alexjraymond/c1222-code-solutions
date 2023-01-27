@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-// const fsPromises = require('fs').promises;
 let nextId = 1;
 const grades = {};
+
+app.use(express.json());
 
 app.get('/api/grades', (req, res) => {
   const gradesArray = [];
@@ -14,15 +15,14 @@ app.get('/api/grades', (req, res) => {
 }
 );
 
-app.use(express.json());
-
 app.post('/api/grades', (req, res) => {
-
+  req.body.studentId = nextId;
   grades[nextId] = req.body;
   nextId++;
   res.sendStatus(201);
+  return grades;
 });
 
 app.listen(port, () => {
-  console.log('express server listening on port: 3000');
+  console.log(`express server listening on port: ${port}`);
 });
