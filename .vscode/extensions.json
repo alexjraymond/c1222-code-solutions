@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "tonybaloney.vscode-pets",
-    "AnbuselvanRocky.bootstrap5-vscode"
+    "anbuselvanrocky.bootstrap5-vscode",
+    "mohammadbaqer.better-folding"
   ]
 }

@@ -1,0 +1,61 @@
+{
+  "nextId": 22,
+  "notes": {
+    "2": {
+      "content": "wowwowowowwowow",
+      "id": "2"
+    },
+    "5": {
+      "id": 5,
+      "content": "In JavaScript, the value of `this` is determined when a function is called; not when it is defined."
+    },
+    "9": {
+      "id": 9,
+      "content": "Inertia is a property of matter."
+    },
+    "10": {
+      "content": "poop",
+      "id": 10
+    },
+    "11": {
+      "content": "poop",
+      "id": 11
+    },
+    "12": {
+      "content": "poop",
+      "id": 12
+    },
+    "13": {
+      "content": "poop",
+      "id": 13
+    },
+    "14": {
+      "conten": "shit",
+      "id": 14
+    },
+    "15": {
+      "content": "poop",
+      "id": 15
+    },
+    "16": {
+      "contet": "poop22312",
+      "id": 16
+    },
+    "17": {
+      "content": "poop22312",
+      "id": 17
+    },
+    "18": {
+      "content": "gm",
+      "id": 18
+    },
+    "19": {
+      "content": "gm",
+      "id": 19
+    },
+    "21": {
+      "content": "gm",
+      "id": 21
+    }
+  }
+}
