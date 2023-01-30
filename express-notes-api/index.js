@@ -49,11 +49,12 @@ app.delete('/api/notes/:id', (req, res) => {
   } else if (data.notes[deleteId] === undefined) {
     res.status(404).json({ error: 'cannot find that note' });
   }
+  delete data.notes[deleteId];
   write(path, data);
   if (!fs.existsSync(path)) {
     res.status(500).json({ error: 'an unexpected error occured.' });
   }
-  delete data.notes[deleteId];
+
   res.sendStatus(204);
 });
 
@@ -84,3 +85,18 @@ app.put('/api/notes/:id', (req, res) => {
 app.listen(port, () => {
   console.log(`express server listening on port: ${port}`);
 });
+
+/* me getting roasted in class notes
+the two gets are out of order - more specific should be higher
+first get supposed to return array
+make sure to check if there's a conversion to number for get id
+delete was better than get for error checking
+convert to number
+maybe separate function that gets id from request and have it do conversion to #, explicitly cehck if number or nan, if so, return error
+res sendstatus 204 will alays be bad
+need return for 500 status and 404 status in delete
+every time you return an error you need to use return
+put all your errors at top with return statements after each one
+robert has a problem with line 1 but we fix it during databases
+
+*/
