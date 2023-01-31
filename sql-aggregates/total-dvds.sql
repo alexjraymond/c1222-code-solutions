@@ -1,1 +1,1 @@
-select max("inventoryId") from inventory;
+select count(*) from inventory;
