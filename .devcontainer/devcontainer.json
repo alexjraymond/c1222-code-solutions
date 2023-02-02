@@ -11,7 +11,8 @@
     "vscode": {
       "extensions": [
 		"thebearingedge.lfz-code",
-		"tonybaloney.vscode-pets"
+		"tonybaloney.vscode-pets",
+		"MohammadBaqer.better-folding"
 	]
     }
   },
