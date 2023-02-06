@@ -1,6 +1,15 @@
 button {
   width: 250px;
   height: 80px;
-  border-style: solid;
   border-radius: 10px;
+  box-shadow:
+    49,
+    132,
+    253;
+  text-shadow: black;
+  border-style: none;
+}
+
+button:active {
+  opacity: 0.8;
 }
