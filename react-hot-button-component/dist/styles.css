@@ -1,0 +1,43 @@
+button {
+  width: 250px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow:
+    49,
+    132,
+    253;
+  text-shadow: black;
+  border-style: none;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.button-grey {
+  background-color: dimgrey;
+}
+
+.button-navy {
+  background-color: navy;
+}
+
+.button-darkmagenta {
+  background-color: darkmagenta;
+}
+
+.button-indianred {
+  background-color: indianred;
+}
+
+.button-lightsalmon {
+  background-color: lightsalmon;
+}
+
+.button-palegoldenrod {
+  background-color: palegoldenrod;
+}
+
+.button-mintcream {
+  background-color: mintcream;
+}
