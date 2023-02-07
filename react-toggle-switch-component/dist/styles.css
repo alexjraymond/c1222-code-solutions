@@ -1,0 +1,28 @@
+button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  border-style: none;
+}
+
+.button-house {
+  width: 62px;
+  height: 24px;
+  border-radius: 105px;
+}
+
+.button-grey {
+  background-color: lightgrey;
+}
+
+.button-green {
+  background-color: lime;
+}
+
+.ball-grey {
+  transform: translateX(0);
+}
+
+.ball-green {
+  transform: translateX(40px);
+}
