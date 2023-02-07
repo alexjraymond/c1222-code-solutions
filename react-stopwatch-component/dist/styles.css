@@ -1,0 +1,29 @@
+body {
+  font-family: Rubik, sans-serif;
+}
+
+.watch-face {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  border-color: black;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-holder {
+  width: 88.5px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
