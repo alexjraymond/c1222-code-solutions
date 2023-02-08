@@ -21,7 +21,7 @@ function PasswordField() {
     setPassword(event.target.value);
   };
 
-  const iconClass = isGoodEnough ? 'fa-check' : 'fa-xmark';
+  const iconClass = isGoodEnough ? 'fa-check green-text' : 'fa-xmark red-text';
 
   return (
     <div>
