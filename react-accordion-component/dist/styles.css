@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10;
+  font-family: Rubik, sans-serif;
+}
+
+.accordion-title {
+  font-weight: bold;
+  border-style: solid;
+  width: 400px;
+  background-color: aquamarine;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  font-size: 14px;
+  width: 400px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(96 193 160);
+  padding: 10px;
+  transition: 1.5s;
+}
