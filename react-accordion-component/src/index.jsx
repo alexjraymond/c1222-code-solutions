@@ -23,11 +23,5 @@ const prop = [
 ];
 
 root.render(
-  prop.map((accord) => (
-    <Accordion
-      title={accord.title}
-      content={accord.content}
-      key={accord.id}
-    />
-  ))
+  <Accordion prop={prop} />
 );

@@ -25,11 +25,3 @@ body {
   padding: 10px;
   transition: 1.5s;
 }
-
-.squish {
-  max-height: 0;
-}
-
-.unsquish {
-  max-height: 100vh;
-}

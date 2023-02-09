@@ -1,16 +1,39 @@
 import React, { useState } from 'react';
 
-export default function Accordion({ title, content }) {
-  const [open, setOpen] = useState(false);
+export default function Accordion({ prop }) {
+  const [open, setOpen] = useState();
 
-  const handleClick = () => {
-    setOpen(!open);
+  const handleOpen = (accord) => {
+    if (open?.id === accord.id) {
+      setOpen(undefined);
+    } else {
+      setOpen(accord);
+    }
   };
 
   return (
+    <div>
+      {prop.map((accord) =>
+        <AccordionItem
+          key={accord.id}
+          accord={accord}
+          isOpen={accord.id === open?.id}
+          onClick={handleOpen} />
+      )}
+    </div>
+  );
+}
+
+function AccordionItem({ accord, isOpen, onClick }) {
+  return (
     <>
-      <div onClick={handleClick} className="accordion-title">{title}</div>
-      {open && <div className="accordion-content">{content}</div>}
+      <div onClick={() => onClick(accord)} className="accordion-title">
+        <h3>{accord.title}</h3>
+      </div>
+      {isOpen && <div className="accordion-content">
+        {accord.content}
+      </div>
+      }
     </>
   );
 }
