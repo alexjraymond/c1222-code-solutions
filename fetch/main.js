@@ -4,4 +4,5 @@ fetch('https://pokeapi.co/api/v2/pokemon/69')
   })
   .then((pokedata) => {
     console.log(pokedata.name, pokedata);
-  });
+  })
+  .catch(console.error);
