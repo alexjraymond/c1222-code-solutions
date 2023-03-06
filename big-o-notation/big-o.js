@@ -29,7 +29,7 @@ function uniqueQuadratic(words) {
     const word = words[i];          // n
     let isUnique = true;            // n
     for (
-      let c = 0;                    // n^2
+      let c = 0;                    // runs 1 time, n
       c < i;                        // n^2
       c++                           // n^2
     ) {
@@ -38,8 +38,8 @@ function uniqueQuadratic(words) {
         isUnique = false;           // n^2
       }
     }
-    if (isUnique) {                 // n^2
-      unique[unique.length] = word; // n^2
+    if (isUnique) {                 // n
+      unique[unique.length] = word; // n
     }
   }
   return unique;                    // 1
