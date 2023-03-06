@@ -2,7 +2,7 @@
 
 function uniqueLinear(words) {
 
-  //                             # of times run | n amounts
+  //                             # of times run | n amountss
   const seen = {};                  // 1, 1
   const unique = [];                // 1, 1
   for (
